@@ -1,0 +1,66 @@
+{
+  "wulao_spirit": {
+    "忠诚": "对党和人民事业无限忠诚，矢志不渝",
+    "关爱": "关心下一代成长，无私奉献爱心",
+    "创新": "勇于探索创新，不断开拓进取",
+    "奉献": "默默无闻奉献，不计个人得失",
+    "务实": "脚踏实地工作，讲求实际效果"
+  },
+  "person_fields": [
+    {
+      "name": "name",
+      "label": "姓名",
+      "required": true,
+      "desc": "人物唯一标识，不可重复"
+    },
+    {
+      "name": "avatar",
+      "label": "头像文件名",
+      "required": false,
+      "desc": "需与上传的头像文件名一致"
+    },
+    {
+      "name": "bio",
+      "label": "生平/事迹",
+      "required": false,
+      "desc": "体现五老精神的具体事迹，会自动识别精神标签"
+    },
+    {
+      "name": "intro",
+      "label": "简介",
+      "required": false,
+      "desc": "简短标签（如“教育工作者”）"
+    },
+    {
+      "name": "time",
+      "label": "时间",
+      "required": false,
+      "desc": "格式如“1950-”或“1980-2020”"
+    }
+  ],
+  "relation_fields": [
+    {
+      "name": "source",
+      "label": "源人物",
+      "required": true,
+      "desc": "关系起点（需与person的name一致）"
+    },
+    {
+      "name": "target",
+      "label": "目标人物",
+      "required": true,
+      "desc": "关系终点（需与person的name一致）"
+    },
+    {
+      "name": "relation",
+      "label": "关系类型",
+      "required": false,
+      "desc": "如“师徒”“同事”“传承人”"
+    }
+  ],
+  "file_limits": {
+    "avatar": 2,
+    "background": 5,
+    "data": 10
+  }
+}
